@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main()
+{
+
+char name[50];
+int currentyear=2024;
+int BOP;
+int Age;
+
+
+printf("Enter your name: \n");
+scanf("%s", &name[50]);
+
+printf("Enter year of Birth: \n");
+scanf("%d", &BOP);
+
+Age=currentyear-BOP;
+printf("Your age is:  %d\n",Age);
+if(Age>=18){
+    printf("Your are old enough to vote");
+}
+else{
+    printf("You have not reached the required age of voting !");
+}
+return 0;
+
+}
